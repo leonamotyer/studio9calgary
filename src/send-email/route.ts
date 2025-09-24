@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     // Send email to Studio 9
     const studioEmailResult = await resend.emails.send({
       from: process.env.FROM_EMAIL || 'noreply@studio9.com',
-      to: [process.env.TO_EMAIL || 'bonavista@studio9.com'],
+      to: [process.env.CONTACT_DEFAULT_TO || 'bonavista@studio9.com'],
       subject: `New Contact Form Submission: ${subject}`,
       html: contactEmailTemplate(formData),
     });

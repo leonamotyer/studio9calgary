@@ -22,7 +22,7 @@ RESEND_API_KEY=your_resend_api_key_here
 
 # Email Configuration
 FROM_EMAIL=noreply@studio9.com
-TO_EMAIL=bonavista@studio9.com
+CONTACT_DEFAULT_TO=bonavista@studio9.com
 ```
 
 **Important:** Replace `your_resend_api_key_here` with your actual Resend API key.
@@ -33,7 +33,7 @@ For production use, you should:
 
 1. Add your domain to Resend
 2. Verify your domain
-3. Update the `FROM_EMAIL` to use your verified domain (e.g., `noreply@yourdomain.com`)
+3. Update the `FROM_EMAIL` and `CONTACT_DEFAULT_TO` to use your verified domain (e.g., `noreply@yourdomain.com` and `contact@yourdomain.com`)
 
 ### 4. Test the Contact Form
 
