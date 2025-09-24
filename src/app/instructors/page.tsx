@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Icon from '@/components/icons/Icon';
 import instructorsData from './instructors.json';
 
+type IconName = 'piano' | 'guitar' | 'violin' | 'drums' | 'microphone' | 'book';
+
 interface Instructor {
   id: number;
   name: string;
@@ -9,11 +11,11 @@ interface Instructor {
   specialty: string;
   description: string;
   qualifications: string[];
-  icon: string;
+  icon: IconName;
 }
 
 export default function Instructors() {
-  const instructors: Instructor[] = instructorsData.instructors;
+  const instructors: Instructor[] = instructorsData.instructors as Instructor[];
 
   return (
     <div className="min-h-screen">
@@ -54,7 +56,7 @@ export default function Instructors() {
                 <div className="text-center">
                   <div className="bg-neutral-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Icon
-                      name={instructor.icon as any}
+                      name={instructor.icon}
                       size={40}
                       color="var(--accent-600)"
                     />
