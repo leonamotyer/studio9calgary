@@ -2,6 +2,29 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/icons/Icon';
 import programsData from './programs.json';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Music Programs & Lessons - Studio 9 Calgary',
+  description:
+    'Explore our comprehensive music programs at Studio 9 Calgary. Private lessons, group classes, summer camps, and flexible learning options for piano, guitar, violin, drums, and voice.',
+  keywords: [
+    'music programs Calgary',
+    'private music lessons Calgary',
+    'group music classes Calgary',
+    'summer music camps Calgary',
+    'piano programs Calgary',
+    'guitar programs Calgary',
+    'violin programs Calgary',
+    'drum programs Calgary',
+    'voice programs Calgary',
+  ],
+  openGraph: {
+    title: 'Music Programs & Lessons - Studio 9 Calgary',
+    description:
+      'Comprehensive music programs at Studio 9 Calgary. Private lessons, group classes, summer camps, and flexible learning options.',
+  },
+};
 
 export default function Programs() {
   const { summerLessons } = programsData;

@@ -1,5 +1,24 @@
 import Image from 'next/image';
 import Icon from '@/components/icons/Icon';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Studio 9 - Professional Music School in Calgary',
+  description:
+    'Learn about Studio 9 Music School in Calgary. Our mission, values, and commitment to providing professional music education for all ages in a family-friendly environment.',
+  keywords: [
+    'about Studio 9 Calgary',
+    'music school mission Calgary',
+    'music education values Calgary',
+    'professional music instructors Calgary',
+    'music school history Calgary',
+  ],
+  openGraph: {
+    title: 'About Studio 9 - Professional Music School in Calgary',
+    description:
+      'Learn about Studio 9 Music School in Calgary. Our mission, values, and commitment to professional music education.',
+  },
+};
 
 export default function About() {
   return (

@@ -1,6 +1,28 @@
 import Link from 'next/link';
 import Icon from '@/components/icons/Icon';
 import instructorsData from './instructors.json';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Music Instructors - Studio 9 Calgary',
+  description:
+    'Meet our experienced music instructors at Studio 9 Calgary. Professional teachers specializing in piano, guitar, violin, drums, and voice lessons for all ages.',
+  keywords: [
+    'music instructors Calgary',
+    'piano teachers Calgary',
+    'guitar teachers Calgary',
+    'violin teachers Calgary',
+    'drum teachers Calgary',
+    'voice teachers Calgary',
+    'music teachers Calgary',
+    'professional music instructors Calgary',
+  ],
+  openGraph: {
+    title: 'Music Instructors - Studio 9 Calgary',
+    description:
+      'Meet our experienced music instructors at Studio 9 Calgary. Professional teachers for piano, guitar, violin, drums, and voice.',
+  },
+};
 
 type IconName =
   | 'piano'
