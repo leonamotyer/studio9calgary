@@ -46,7 +46,7 @@ export default function Instructors() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {instructors.map((instructor) => (
+            {instructors.map(instructor => (
               <div
                 key={instructor.id}
                 className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
@@ -103,8 +103,8 @@ export default function Instructors() {
                 Professional Musicians
               </h3>
               <p className="text-neutral-600">
-                Our instructors are active professional musicians with real-world
-                performance experience.
+                Our instructors are active professional musicians with
+                real-world performance experience.
               </p>
             </div>
 
@@ -129,8 +129,8 @@ export default function Instructors() {
                 Passionate Teachers
               </h3>
               <p className="text-neutral-600">
-                Our instructors are dedicated to sharing their love of music
-                and helping students succeed.
+                Our instructors are dedicated to sharing their love of music and
+                helping students succeed.
               </p>
             </div>
 

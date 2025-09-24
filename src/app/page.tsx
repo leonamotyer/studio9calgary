@@ -18,7 +18,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
-        
+
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h1 className="font-playfair text-5xl lg:text-6xl font-bold mb-6 text-white">
@@ -27,8 +27,8 @@ export default function Home() {
           </h1>
           <p className="text-xl mb-8 text-neutral-200 max-w-3xl mx-auto">
             Studio 9 offers professional music education for all ages in a
-            nurturing, family-friendly environment. From beginner to
-            advanced, we help you unlock your musical potential.
+            nurturing, family-friendly environment. From beginner to advanced,
+            we help you unlock your musical potential.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
