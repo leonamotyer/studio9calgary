@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Icon from '@/components/icons/Icon';
 
 export default function About() {
   return (
@@ -82,7 +83,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🎯</span>
+                <Icon name="target" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Excellence
@@ -95,7 +96,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">❤️</span>
+                <Icon name="heart" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Passion
@@ -121,7 +122,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🌟</span>
+                <Icon name="star" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Individuality
@@ -134,7 +135,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">📚</span>
+                <Icon name="book" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Education

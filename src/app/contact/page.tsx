@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Icon from '@/components/icons/Icon';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,11 +23,41 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert(
+          'Thank you for your message! We have sent you a confirmation email and will get back to you soon.'
+        );
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        throw new Error(result.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert(
+        'Sorry, there was an error sending your message. Please try again or call us at (403) 271-2066.'
+      );
+    }
   };
 
   return (
@@ -177,7 +208,7 @@ export default function Contact() {
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
                   <div className="bg-neutral-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent text-xl">📍</span>
+                    <Icon name="map-pin" size={24} color="var(--accent-600)" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-primary mb-2">
@@ -195,7 +226,7 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-neutral-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent text-xl">📞</span>
+                    <Icon name="phone" size={24} color="var(--accent-600)" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-primary mb-2">
@@ -213,7 +244,7 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-neutral-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent text-xl">✉️</span>
+                    <Icon name="mail" size={24} color="var(--accent-600)" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-primary mb-2">
@@ -231,7 +262,7 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-neutral-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent text-xl">🕒</span>
+                    <Icon name="clock" size={24} color="var(--accent-600)" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-primary mb-2">

@@ -2,7 +2,20 @@ import Link from 'next/link';
 import Icon from '@/components/icons/Icon';
 import instructorsData from './instructors.json';
 
-type IconName = 'piano' | 'guitar' | 'violin' | 'drums' | 'microphone' | 'book';
+type IconName =
+  | 'piano'
+  | 'guitar'
+  | 'violin'
+  | 'drums'
+  | 'microphone'
+  | 'book'
+  | 'map-pin'
+  | 'phone'
+  | 'mail'
+  | 'clock'
+  | 'target'
+  | 'heart'
+  | 'star';
 
 interface Instructor {
   id: number;

@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '@/components/icons/Icon';
+import programsData from './programs.json';
 
 export default function Programs() {
+  const { summerLessons } = programsData;
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -94,8 +96,111 @@ export default function Programs() {
         </div>
       </section>
 
-      {/* Learning Options */}
+      {/* Summer Lessons Section */}
       <section className="py-20 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl font-bold text-primary mb-4">
+              Summer Lessons & Camps
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+              {summerLessons.description}
+            </p>
+            {summerLessons.seasonComplete && (
+              <div className="bg-accent-solid text-white p-6 rounded-lg max-w-2xl mx-auto">
+                <p className="text-lg font-semibold">{summerLessons.message}</p>
+              </div>
+            )}
+          </div>
+
+          {/* Private Summer Lessons */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <div className="text-center mb-8">
+              <h3 className="font-playfair text-3xl font-bold text-primary mb-4">
+                Private Summer Lessons
+              </h3>
+              <div className="bg-accent-solid text-white px-6 py-3 rounded-lg inline-block mb-4">
+                <span className="text-xl font-bold">
+                  {summerLessons.privateLessons.price}
+                </span>
+              </div>
+              <p className="text-neutral-600 mb-4">
+                {summerLessons.privateLessons.packages}
+              </p>
+              <p className="text-neutral-600 mb-6">
+                {summerLessons.privateLessons.schedule}
+              </p>
+            </div>
+            <p className="text-neutral-600 text-center max-w-4xl mx-auto">
+              {summerLessons.privateLessons.description}
+            </p>
+          </div>
+
+          {/* Summer Camps */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {summerLessons.camps.map(camp => (
+              <div key={camp.id} className="bg-white rounded-xl shadow-lg p-8">
+                <div className="text-center mb-6">
+                  <h3 className="font-playfair text-2xl font-bold text-primary mb-2">
+                    {camp.name}
+                  </h3>
+                  <div className="flex justify-center items-center gap-4 mb-4">
+                    <span className="bg-neutral-100 px-4 py-2 rounded-lg text-neutral-700 font-semibold">
+                      Ages {camp.ages}
+                    </span>
+                    <span className="bg-accent-solid text-white px-4 py-2 rounded-lg font-bold">
+                      {camp.price}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="font-semibold text-primary mb-3">
+                    Session Times:
+                  </h4>
+                  <ul className="space-y-2">
+                    {camp.sessions.map((session, index) => (
+                      <li
+                        key={index}
+                        className="flex items-center text-neutral-600"
+                      >
+                        <Icon
+                          name="clock"
+                          size={16}
+                          color="var(--accent-600)"
+                          className="mr-2"
+                        />
+                        {session}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="font-semibold text-primary mb-3">
+                    Instruments:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {camp.instruments.map((instrument, index) => (
+                      <span
+                        key={index}
+                        className="bg-neutral-100 px-3 py-1 rounded-full text-sm text-neutral-700"
+                      >
+                        {instrument}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <p className="text-neutral-600 text-sm">{camp.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Options */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-primary mb-4">

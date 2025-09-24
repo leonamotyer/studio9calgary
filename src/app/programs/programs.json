@@ -1,0 +1,77 @@
+{
+  "summerLessons": {
+    "seasonComplete": true,
+    "message": "Our Summer 2025 lessons season is now complete. We would like to thank all the students and their families for making our summer so wonderful, and we hope to see you all in the Fall.",
+    "description": "Summer is a wonderful time for music classes. With school out, it can add a little structure to the summer and provide children something productive to work on. It gives them a lifelong skill, and it is also a lot of fun. Students can choose private one-on-one classes or one of our many group programs. Don't let your summer go to waste; make some friends, learn something new, and have a lot of fun while you are at it.",
+    "privateLessons": {
+      "price": "$38 – $40 per lesson",
+      "packages": "Packages of 2 lessons, 4 lessons, 6 lessons, or 8 lessons available",
+      "schedule": "Music classes are available Tuesday, Wednesday, or Thursday throughout July and August",
+      "description": "Just because school is on break doesn't mean you must take a break from your music lessons. Summer is a great time to take one-on-one lessons. Some students want to keep playing and continue with their teacher through July and August, or maybe you want to try a new teacher, a new style of music, or even learn a new instrument."
+    },
+    "camps": [
+      {
+        "id": 1,
+        "name": "Intro to Music Camp",
+        "ages": "8 – 12",
+        "price": "$200 for the week",
+        "sessions": [
+          "July 7 to 11 from 5 pm – 7 pm",
+          "July 21 to 25 from 5 pm – 7 pm",
+          "July 28 – Aug 1 from 5 pm – 7 pm",
+          "Aug 11 – 15 from 5 pm – 7 pm",
+          "Aug 18 – 22 from 2:30 pm – 4:30 pm"
+        ],
+        "description": "Love music but don't know where to start? Many students are interested in learning how to play an instrument, but they don't know which one to pick or they have a few that they want to learn. In this specialized camp, we will introduce students to Piano, Guitar, Singing, and Drums. Our goal is to have fun but also introduce the students to 4 different instruments so they have enough of a foundation and enough knowledge to pick the instrument that is right for them. We even supply all the instruments and supplies.",
+        "instruments": ["Piano", "Guitar", "Singing", "Drums"]
+      },
+      {
+        "id": 2,
+        "name": "Rock Band Camp",
+        "ages": "13 – 17",
+        "price": "$200 for the week",
+        "sessions": [
+          "July 7 – 11 from 2:30 pm – 4:30 pm",
+          "July 14 – 18 from 5 pm – 7 pm",
+          "July 28 – Aug 1 from 2:30 pm – 4:30 pm",
+          "Aug 18 – 22 from 5 pm- 7pm",
+          "Aug 25 – 29 from 3:30 pm – 5:30 pm"
+        ],
+        "description": "You have taken some private lessons… You have learned some songs… You have even 'rocked out'… but now what? Let us help you jump to the next step. Learn how to play in a band, organize and run an effective rehearsal, play songs you listen to, and put it all together. For the week, you are in a real band playing real songs and working on real music. The camp is open to all musicians: guitar, bass, drums, piano, vocals, brass, and woodwinds. Spaces and availability are limited.",
+        "instruments": [
+          "Guitar",
+          "Bass",
+          "Drums",
+          "Piano",
+          "Vocals",
+          "Brass",
+          "Woodwinds"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Guitar for Beginners",
+        "ages": "8 – 12",
+        "price": "$100 for the week",
+        "sessions": [
+          "July 21 – 25 from 3:30 pm – 4:30 pm",
+          "Aug 25 – 29 from 6 pm – 7 pm"
+        ],
+        "description": "The perfect place for children to explore the guitar for the very first time. They will spend the week learning chords, notes, and songs. We supply the materials and the guitars, students supply the energy and enthusiasm for a wonderful week of exploration.",
+        "instruments": ["Guitar"]
+      },
+      {
+        "id": 4,
+        "name": "Piano for Beginners",
+        "ages": "8 – 12",
+        "price": "$100 for the week",
+        "sessions": [
+          "July 14 – 18 from 3:30 pm – 4:30 pm",
+          "Aug 11-15 from 3:30 pm – 4:30 pm"
+        ],
+        "description": "The piano is the first instrument for millions of beginner students around the world. The logical layout of the keys and the immense volume of music for new beginners make it a wonderful instrument to introduce any student to music. Our intro to piano camp will be the perfect choice for a student who wants to 'test' the waters before they begin private lessons or for the student who wants a head start before they work with a teacher one-on-one. We supply the instruments and the materials for the week.",
+        "instruments": ["Piano"]
+      }
+    ]
+  }
+}
