@@ -15,7 +15,9 @@ type IconName =
   | 'clock'
   | 'target'
   | 'heart'
-  | 'star';
+  | 'star'
+  | 'handshake'
+  | 'celebration';
 
 interface Instructor {
   id: number;
@@ -28,7 +30,9 @@ interface Instructor {
 }
 
 export default function Instructors() {
-  const instructors: Instructor[] = instructorsData.instructors as Instructor[];
+  const instructors: Instructor[] = (
+    instructorsData.instructors as Instructor[]
+  ).sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="min-h-screen">

@@ -109,7 +109,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🤝</span>
+                <Icon name="handshake" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Community
@@ -148,7 +148,7 @@ export default function About() {
 
             <div className="bg-white rounded-xl shadow-lg p-8 text-center">
               <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🎉</span>
+                <Icon name="celebration" size={32} color="white" />
               </div>
               <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
                 Fun
