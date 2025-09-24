@@ -1,103 +1,245 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import Icon from '@/components/icons/Icon';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/music.jpg"
+            alt="music instruments"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="font-playfair text-5xl lg:text-6xl font-bold mb-6 text-white">
+            Discover Your
+            <span className="block text-accent">Musical Journey</span>
+          </h1>
+          <p className="text-xl mb-8 text-neutral-200 max-w-3xl mx-auto">
+            Studio 9 offers professional music education for all ages in a
+            nurturing, family-friendly environment. From beginner to
+            advanced, we help you unlock your musical potential.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/registration"
+              className="bg-accent-solid text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity duration-200 text-center"
+            >
+              Start Your Journey
+            </Link>
+            <Link
+              href="/about"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors duration-200 text-center"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs Section */}
+      <section className="py-20 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl font-bold text-primary mb-4">
+              Our Programs
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              We offer comprehensive music education programs designed to
+              inspire and develop musical talent at every level.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Piano */}
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="bg-neutral-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="piano" size={32} color="var(--accent-600)" />
+                </div>
+                <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
+                  Piano Lessons
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  Master the fundamentals of piano playing with our experienced
+                  instructors. Perfect for all ages and skill levels.
+                </p>
+                <ul className="text-left text-neutral-600 space-y-2 mb-6">
+                  <li>• Classical & Contemporary Styles</li>
+                  <li>• Theory & Technique</li>
+                  <li>• Performance Opportunities</li>
+                  <li>• Ages 5+</li>
+                </ul>
+                <Link
+                  href="/programs"
+                  className="text-accent font-semibold hover:opacity-80 transition-opacity duration-200"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+
+            {/* Guitar */}
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="bg-neutral-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="guitar" size={32} color="var(--accent-600)" />
+                </div>
+                <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
+                  Guitar Lessons
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  Learn acoustic and electric guitar with personalized
+                  instruction tailored to your musical interests and goals.
+                </p>
+                <ul className="text-left text-neutral-600 space-y-2 mb-6">
+                  <li>• Acoustic & Electric</li>
+                  <li>• Rock, Pop, Classical</li>
+                  <li>• Fingerpicking & Strumming</li>
+                  <li>• Ages 8+</li>
+                </ul>
+                <Link
+                  href="/programs"
+                  className="text-accent font-semibold hover:opacity-80 transition-opacity duration-200"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+
+            {/* Voice */}
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="bg-neutral-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="microphone" size={32} color="var(--accent-600)" />
+                </div>
+                <h3 className="font-playfair text-2xl font-bold text-primary mb-4">
+                  Voice Lessons
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  Develop your vocal skills with professional voice training
+                  covering technique, breathing, and performance.
+                </p>
+                <ul className="text-left text-neutral-600 space-y-2 mb-6">
+                  <li>• Vocal Technique</li>
+                  <li>• Breathing Exercises</li>
+                  <li>• Performance Skills</li>
+                  <li>• All Ages</li>
+                </ul>
+                <Link
+                  href="/programs"
+                  className="text-accent font-semibold hover:opacity-80 transition-opacity duration-200"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Studio 9 */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl font-bold text-primary mb-4">
+              Why Choose Studio 9?
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              We&apos;re committed to providing exceptional music education in a
+              supportive, professional environment.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="user" size={24} color="white" />
+              </div>
+              <h3 className="font-semibold text-lg text-primary mb-2">
+                Expert Instructors
+              </h3>
+              <p className="text-neutral-600">
+                Learn from professional musicians with years of teaching
+                experience.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="home" size={24} color="white" />
+              </div>
+              <h3 className="font-semibold text-lg text-primary mb-2">
+                Family-Friendly
+              </h3>
+              <p className="text-neutral-600">
+                Safe, welcoming environment perfect for students of all ages.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="clock" size={24} color="white" />
+              </div>
+              <h3 className="font-semibold text-lg text-primary mb-2">
+                Flexible Scheduling
+              </h3>
+              <p className="text-neutral-600">
+                Lessons available throughout the week to fit your busy schedule.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-accent-solid w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="trophy" size={24} color="white" />
+              </div>
+              <h3 className="font-semibold text-lg text-primary mb-2">
+                Performance Opportunities
+              </h3>
+              <p className="text-neutral-600">
+                Regular recitals and performances to showcase your progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-accent-solid text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="font-playfair text-4xl font-bold mb-6">
+            Ready to Start Your Musical Journey?
+          </h2>
+          <p className="text-xl mb-8 text-neutral-200">
+            Join hundreds of students who have discovered their passion for
+            music at Studio 9. Book your first lesson today!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/registration"
+              className="bg-white text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:bg-neutral-100 transition-colors duration-200"
+            >
+              Enroll Now
+            </Link>
+            <Link
+              href="/contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-accent transition-colors duration-200"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

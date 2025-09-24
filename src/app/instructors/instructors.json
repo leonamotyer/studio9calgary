@@ -1,0 +1,173 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Fran Hampel",
+      "instrument": "Violin",
+      "specialty": "Violin Teacher",
+      "description": "Fran brings years of classical violin experience and a passion for teaching students of all ages.",
+      "qualifications": [
+        "Classical Violin Performance",
+        "Music Education Certification",
+        "10+ years teaching experience"
+      ],
+      "icon": "violin"
+    },
+    {
+      "id": 2,
+      "name": "Connor Wilson",
+      "instrument": "Guitar",
+      "specialty": "Guitar Teacher",
+      "description": "Connor specializes in acoustic and electric guitar, covering rock, pop, and classical styles.",
+      "qualifications": [
+        "Professional Guitarist",
+        "Rock, Pop, Classical",
+        "8+ years teaching experience"
+      ],
+      "icon": "guitar"
+    },
+    {
+      "id": 3,
+      "name": "Ryan Milliken",
+      "instrument": "Guitar",
+      "specialty": "Guitar Teacher",
+      "description": "Ryan is an experienced guitarist with expertise in multiple genres and teaching methods.",
+      "qualifications": [
+        "Multi-genre Guitarist",
+        "Contemporary & Classical",
+        "7+ years teaching experience"
+      ],
+      "icon": "guitar"
+    },
+    {
+      "id": 4,
+      "name": "Demetrio Navarro",
+      "instrument": "Piano",
+      "specialty": "Piano Teacher",
+      "description": "Demetrio is a classically trained pianist with extensive experience in both classical and contemporary music.",
+      "qualifications": [
+        "Classical Piano Performance",
+        "Contemporary Styles",
+        "12+ years teaching experience"
+      ],
+      "icon": "piano"
+    },
+    {
+      "id": 5,
+      "name": "Alex Olesen",
+      "instrument": "Drums",
+      "specialty": "Drum Teacher",
+      "description": "Alex is a versatile drummer who plays everything from jazz to rock, focusing on technique and musical expression.",
+      "qualifications": [
+        "Professional Session Drummer",
+        "Jazz, Rock, Pop",
+        "9+ years teaching experience"
+      ],
+      "icon": "drums"
+    },
+    {
+      "id": 6,
+      "name": "Margo Macdonell",
+      "instrument": "Piano",
+      "specialty": "Piano Teacher",
+      "description": "Margo specializes in classical piano and helps students develop both technical skills and musical expression.",
+      "qualifications": [
+        "Master of Music, Piano Performance",
+        "Classical & Contemporary",
+        "11+ years teaching experience"
+      ],
+      "icon": "piano"
+    },
+    {
+      "id": 7,
+      "name": "Vernon Wills",
+      "instrument": "Guitar",
+      "specialty": "Guitar Teacher",
+      "description": "Vernon brings a wealth of experience in both acoustic and electric guitar instruction.",
+      "qualifications": [
+        "Professional Musician",
+        "Acoustic & Electric Guitar",
+        "6+ years teaching experience"
+      ],
+      "icon": "guitar"
+    },
+    {
+      "id": 8,
+      "name": "Katrina Jordan",
+      "instrument": "Piano",
+      "specialty": "Piano Teacher",
+      "description": "Katrina is passionate about helping students discover their musical potential through piano.",
+      "qualifications": [
+        "Bachelor of Music Education",
+        "Classical & Popular Music",
+        "8+ years teaching experience"
+      ],
+      "icon": "piano"
+    },
+    {
+      "id": 9,
+      "name": "Mario Sota",
+      "instrument": "Guitar/Ukulele",
+      "specialty": "Guitar/Ukulele Teacher",
+      "description": "Mario teaches both guitar and ukulele, making music accessible and fun for students of all ages.",
+      "qualifications": [
+        "Multi-instrument Specialist",
+        "Guitar & Ukulele",
+        "5+ years teaching experience"
+      ],
+      "icon": "guitar"
+    },
+    {
+      "id": 10,
+      "name": "Yelena Yermolayeva",
+      "instrument": "Piano",
+      "specialty": "Piano Teacher",
+      "description": "Yelena is a classically trained pianist with international performance experience.",
+      "qualifications": [
+        "International Performance Experience",
+        "Classical Piano Mastery",
+        "13+ years teaching experience"
+      ],
+      "icon": "piano"
+    },
+    {
+      "id": 11,
+      "name": "Ken Murdoch",
+      "instrument": "Drums/Guitar",
+      "specialty": "Drums/Guitar Teacher",
+      "description": "Ken is a multi-talented musician who teaches both drums and guitar with equal expertise.",
+      "qualifications": [
+        "Multi-instrument Specialist",
+        "Drums & Guitar",
+        "10+ years teaching experience"
+      ],
+      "icon": "drums"
+    },
+    {
+      "id": 12,
+      "name": "Kurtis Downs",
+      "instrument": "Guitar",
+      "specialty": "Guitar Teacher",
+      "description": "Kurtis specializes in contemporary guitar styles and helps students develop their unique sound.",
+      "qualifications": [
+        "Contemporary Guitar Styles",
+        "Rock, Pop, Blues",
+        "7+ years teaching experience"
+      ],
+      "icon": "guitar"
+    },
+    {
+      "id": 13,
+      "name": "Roland Griffith",
+      "instrument": "Piano",
+      "specialty": "Piano Teacher",
+      "description": "Roland brings decades of piano experience and a patient, encouraging teaching style.",
+      "qualifications": [
+        "Master of Music Education",
+        "Classical & Jazz Piano",
+        "15+ years teaching experience"
+      ],
+      "icon": "piano"
+    }
+  ]
+}
